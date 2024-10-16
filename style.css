@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272952;
+    height: 100vh;
+}
+
+.mainContainer {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid black;
+    background-color: black;
+    width: 450px;
+    height: 40em;
+    color: aliceblue;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#displayBox {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 98%;
+    /* height: 3.5em; */
+    height: 25%;
+    background-color: #00b4c8;
+    color: black;
+    font-size: 72px;
+    overflow: hidden;
+    padding-right: .1em;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    margin: .15em;
+}
+
+.opSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    height: 35em;
+    background-color: black;
+    flex-wrap: wrap;
+    gap: 0.15em; 
+}
+
+.miscOperator, .operator, .digits, #equals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00b4c8;
+    width: calc(25% - 0.15em); 
+    height: 18%;
+    box-sizing: border-box;
+    margin: 0; 
+    color: black;
+    font-weight: 300;
+    font-size: 32px;
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 0;
+}
+
+#zero {
+    width: calc(50% - 0.5em); 
+}
+
+.digits {
+    background-color: #006c9c;
+    color: white;
+}
+
+.operator {
+    color: white;
+}
+
+.miscOperator, #equals {
+    background-color:#aba9bb;
+}
+
+button, div {
+    border-radius: 12px;
+}  
